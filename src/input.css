@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+html {
+    @apply font-Hanken_Grotesk
+}
+body{
+    @apply relative bg-Pale_blue md:py-10% md:px-25%
+}
+.main_container{
+    @apply md:flex rounded-[30px] bg-white
+}
+.result_container{
+    @apply bg-gradient-to-b from-Light_slate_blue from-30% via-Light_royal_blue via-80% to-Light_royal_blue md:rounded-[30px] to-100% sm:rounded-b-[30px] p-8 text-center text-Pale_blue md:w-1/2 sm:px-12
+}
+.result_title{
+    @apply text-[1.5rem] font-semibold
+}
+.circle{
+    @apply rounded-[100%] bg-gradient-to-b from-Cobalt_blue shadow-[0_-2px_2px_-0px_rgba(250,150,250,.5)] py-8 w-[11rem] h-[11rem] mx-auto my-6
+}
+.circle h1{
+    @apply font-black text-[4.2rem]/[1.2]
+}
+.circle p{
+    @apply text-[1.1rem]/[.5]
+}
+.result_text h2{
+    @apply font-bold text-[2.2rem]
+}
+.result_text p{
+    @apply md:text-[1.3rem] py-2 sm:text-[1.1rem]
+}
+
+/* summary container */
+.summary_container{
+    @apply md:w-1/2  p-8
+}
+.summary_title{
+    @apply text-[1.5rem] mb-6 font-semibold 
+}
+.summary ul{
+    @apply flex gap-x-3
+}
+.summary{
+    @apply flex justify-between mb-4 p-4 rounded-[15px] border-e-2 border-s-2 text-[1.1rem]
+}
+.first_summary{
+    @apply bg-Light_red bg-opacity-5
+}
+.first_summary .sum_title li:nth-child(2){
+    @apply text-Light_red font-medium
+}
+.second_summary{
+    @apply bg-Orangey_yellow bg-opacity-5
+}
+.second_summary .sum_title li:nth-child(2){
+    @apply text-Orangey_yellow font-medium
+}
+.third_summary{
+    @apply bg-Green_teal bg-opacity-5
+}
+.third_summary .sum_title li:nth-child(2){
+    @apply text-Green_teal font-medium
+}
+.fourth_summary{
+    @apply bg-Light_slate_blue bg-opacity-5
+}
+.fourth_summary .sum_title li:nth-child(2){
+    @apply text-Light_slate_blue font-medium
+}
+.sum_number li:nth-child(2){
+    @apply  text-Dark_gray_blue opacity-70
+}
+.sum_number li:nth-child(1){
+    @apply font-semibold text-Dark_gray_blue
+}
+
+/* Continue button */
+.continue_button button{
+    @apply bg-Dark_gray_blue w-full text-Pale_blue p-4 text-[1.3rem] rounded-[30px]  shadow-Dark_gray_blue shadow-sm cursor-pointer hover:bg-gradient-to-b hover:from-Light_slate_blue hover:to-Light_royal_blue font-semibold mt-3
+}
+
+/* footer */
+footer{
+    @apply text-center mt-8 pb-2 text-[.9rem] font-semibold
+}
+.attribution a{
+    @apply text-Light_red
+}
+
+@tailwind utilities;
